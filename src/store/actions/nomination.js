@@ -35,10 +35,8 @@ export const nominateMovies = (list, token,userId) => {
     }
     return dispatch => {
         axios.post('/nominations.json?auth=' + token, nominationData).then(response => {
-            console.log(response)
             dispatch(nominateMoviesSuccess());
         }).catch(error => {
-            console.log(error)
             dispatch(nominationFail(error));
         });
     };
@@ -64,10 +62,8 @@ export const fetchNomination = (token, userId) => {
             for (let key in response.data) {
                 fetchedNominations=[...response.data[key].list];
             }
-            console.log(fetchedNominations)
             dispatch(fetchNominationSuccess(fetchedNominations));
         }).catch(error => {
-            console.log(error)
             dispatch(nominationFail(error));
         });
 

@@ -22,16 +22,15 @@ const Nominator = props => {
 
         let url;
         if (title.length && year.length) {
-            url = `http://www.omdbapi.com/?s=${title}&y=${year}&type=movie&page=1&apikey=fef9fdd8`;
+            url = `https://www.omdbapi.com/?s=${title}&y=${year}&type=movie&page=1&apikey=fef9fdd8`;
 
         }
         else if (title.length) {
-            url = `http://www.omdbapi.com/?s=${title}&type=movie&page=1&apikey=fef9fdd8`;
+            url = `https://www.omdbapi.com/?s=${title}&type=movie&page=1&apikey=fef9fdd8`;
         }
         if (url) {
             axios.get(url)
                 .then(res => {
-                    console.log(res);
                     if (!res.data.Error) {
                         setResults(res.data.Search);
                     }
@@ -72,11 +71,9 @@ const Nominator = props => {
                 <div className={Classes.header}>
                     <h4 className={Classes.title}>Pick your best five movies</h4>
                     <SearchBar value={title} placeholder="Find Movie" changed={event => {
-                        console.log(title);
                         setTitle(event.target.value);
                     }} />
                     <SearchBar value={year} placeholder="Year" changed={event => {
-                        console.log(year);
                         setYear(event.target.value);
                     }} />
                     <div className={Classes.quit}>
