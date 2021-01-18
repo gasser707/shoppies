@@ -1,0 +1,13 @@
+.Herobox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.main{
+    margin-bottom: 4rem;
+}

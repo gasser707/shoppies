@@ -1,0 +1,35 @@
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  80% {
+    transform: translateY(-2rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+.success {
+  height: 5rem;
+  width: 20rem;
+  background: linear-gradient(#7ed56f, #28b485);
+  border-radius: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: moveInBottom ease-out 1.5s;
+
+}
+
+.paragraph{
+  color: var(--color-grey-dark-1);
+  font-size: 1.5rem;
+  font-weight: 600;
+
+}

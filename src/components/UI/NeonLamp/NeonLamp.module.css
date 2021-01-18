@@ -1,0 +1,85 @@
+@font-face {
+  font-family: neon;
+  src: url(hellodenverdisplayregular_v1.6.ttf);
+}
+
+.neonText {
+  font-family: neon;
+  font-size: 45px;
+  letter-spacing: 15px;
+  text-transform: uppercase;
+  text-align: center;
+  /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0008); */
+  line-height: -0.7em;
+  outline: none;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px;
+}
+.topLeft {
+  position: absolute;
+  top: 60px;
+  left: 40px;
+  transform: rotate(-30deg);
+  color: #0e3742;
+  border: 4px solid #0e3742;
+  animation: animate 5s linear infinite;
+}
+.center{
+  font-size: 60px;
+  width: 700px;
+  margin: 120px 0 20px 100px;
+  color: #ffd8d8;
+  text-shadow: 
+  .1vw 0vw .25vw #ffd8d8, .2vw 0vw .25vw #ffd8d8, .4vw 0vw .25vw #ffd8d8, 
+  .1vw 0vw   0vw #f25757, .2vw 0vw   0vw #f25757, .4vw 0vw   0vw #f25757,
+  .1vw 0vw  .1vw #f25757, .2vw 0vw  .1vw #f25757, .4vw 0vw  .1vw #f25757,
+  .1vw 0vw   2vw #f25757, .2vw 0vw   2vw #f25757, .4vw 0vw   2vw #f25757, 
+  .1vw 0vw   1vw #e50b0b, .2vw 0vw   1vw #e50b0b, .4vw 0vw   5vw #e50b0b,
+  /* /* .1vw 0vw   5vw #e50b0b, .2vw 0vw  20vw #e50b0b, .4vw 0vw  10vw #e50b0b, */
+  .1vw 0vw  10vw #e50b0b, .2vw 0vw  30vw #e50b0b, .4vw 0vw  10vw #e50b0b; 
+  box-shadow:
+  0 0 0.1vw  0.4vw #fff7f7,   
+  0 0 0.4vw  0.6vw #e97272, 
+  0 0   4vw  0.4vw #e50b0b,
+  inset 0 0 1.5vw  0.4vw #e50b0b,
+  inset 0 0 0.4vw  0.2vw #e97272,
+  inset 0 0 0.5vw  0.2vw #fff7f7;
+  border-radius: 1.5rem;
+}
+@keyframes animate {
+  0%,
+  18%,
+  20%,
+  50.1%,
+  60%,
+  65.1%,
+  80%,
+  90.1%,
+  92% {
+    color: #0e3742;
+    border-color: #0e3742;
+    text-shadow: none;
+    box-shadow: none;
+  }
+
+  18.1%,
+  20.1%,
+  30%,
+  50%,
+  60.1%,
+  65%,
+  80.1%,
+  90%,
+  92.1%,
+  100% {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      0 0 80px #03bcf4, 0 0 160px #03bcf4;
+
+    border-color: #fff;
+    box-shadow: 0 0 10px #03bcf4, 0 0 20px #03bcf4, 0 0 40px #03bcf4,
+      inset 0 0 1.5vw 0.4vw #03bcf4, inset 0 0 0.4vw 0.2vw #03bcf4,
+      inset 0 0 1.5vw 0.4vw#03bcf4, inset 0 0 0.5vw 0.2vw #fff;
+  }
+}

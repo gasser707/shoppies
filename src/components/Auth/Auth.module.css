@@ -1,0 +1,30 @@
+.container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  justify-self: center;
+  align-self: center;
+}
+.Auth {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #1F2937;
+    border :1px solid #1F2937;
+    padding:10px;
+    background-color: #1F2937;
+    box-sizing: border-box;
+    box-shadow: 0 1rem 2rem rgba(#000, 0.15);
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width:600px){
+    .Auth{
+      width:500px;
+    }
+  }
+  
