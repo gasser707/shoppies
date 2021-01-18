@@ -1,5 +1,7 @@
 # For live version: https://gasser707.github.io/shoppies/
 
+###Youtube demo: https://www.youtube.com/watch?v=8zqVpYECUAk
+
 ## Available Scripts
 
 In the project directory, you can run:
